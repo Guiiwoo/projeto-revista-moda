@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--fonte-padrao);
+}
+
+:root{
+    --cor1: #162028;
+    --cor2: #425564;
+    --cor3: #555;
+    --cor4: #003d52;
+    --cor5: #0b171f;
+    --cor6: #6f8597;
+
+    --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    --fonte-titulo: Viaoda Libre, serif;
+}
+
+body, html{
+    height: 100vh;
+}
+
+header{
+    background-color: var(--cor4);
+    background-image: url(../imagens/topo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+header > div{
+    background-color: var(--cor1);
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+header > div > h1{
+    flex-grow: 1;
+    color: white;
+    font-size: 4.5em;
+    margin-left: 15%;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+}
+
+header > div > nav{
+    flex-grow: 1;
+}
+
+header > div > nav > ul{
+    display: flex;
+    list-style-type: none;
+    gap: 150px;
+    font-size: 1.5em;
+    justify-content: flex-end;
+    margin-right: 5%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+header > div > nav > ul > li > a{
+    color: var(--cor2);
+    text-decoration: none;
+    transition: color .4s;
+    font-family: var(--fonte-padrao);
+}
+
+header > div > nav > ul > li > a:hover{
+    color: var(--cor6);
+}
+
+main > section#sec1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main > section#sec1 > article{
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    text-align: center;
+    gap: 40px;
+}
+
+main > section#sec1 > article > h1{
+    font-size: 3em;
+    font-family: var(--fonte-titulo);
+    color: var(--cor2);
+    font-weight: normal;
+}
+
+main > section#sec1 > article > p{
+    font-size: 1.3em;
+    color: var(--cor3);  
+}
+
+main > section#sec1 > aside{   
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+main > section#sec1 > aside > div{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color: var(--cor3);
+}
+
+main > section#sec1 > aside > div > img{
+    height: 270px;
+}
+
+main > section#sec1 > aside > div > h2{
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    font-size: 1.4em;
+}
+
+main > section#sec1 > aside > div > p{
+    font-size: 1em;
+}
+
+main > section#sec2{
+    height: 83vh;
+    background-color: var(--cor4);
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 40%;
+    color: white;
+    display: flex;
+}
+
+main > section#sec2 > div{
+    margin-left: 5%;
+    width: 60%;
+}
+
+main > section#sec2 > div > h1{
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 3.5em;
+    margin-bottom: 70px;
+    margin-top: 125px;
+    width: 90vw;
+}
+
+main > section#sec2 > div > p{
+    font-size: 1.5em;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--cor5);
+    color: var(--cor6);
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+
+
